@@ -1,2 +1,0 @@
-# Rawsonlinux
-rawson linux
