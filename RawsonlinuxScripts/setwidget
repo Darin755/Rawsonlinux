@@ -1,0 +1,4 @@
+#!/bin/bash
+panel=$(wmctrl -l)
+p=($panel)
+wmctrl -i -r ${p[$1]} -b add,below

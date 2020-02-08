@@ -1,0 +1,13 @@
+#!/bin/bash
+apt install xfce4 xfce4-goodies lightdm varity cmatrix sfdashboard clamtk clamav libreoffice firefox wmctrl
+mkdir homeunzip
+cp homeConfig.zip homeunzip
+cd homeunzip
+unzip homeConfig.zip
+rm homeConfig.zip
+cp * $HOME
+cd ..
+cd RawsonlinuxScripts 
+cp * /bin/ 
+cd ..
+exit 0
