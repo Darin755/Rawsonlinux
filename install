@@ -1,5 +1,5 @@
 #!/bin/bash
-apt install xfce4 xfce4-goodies lightdm varity cmatrix sfdashboard clamtk clamav libreoffice firefox wmctrl
+apt install xfce4 xfce4-goodies lightdm variety cmatrix xfdashboard clamtk clamav libreoffice firefox wmctrl unzip
 cp config.zip $HOME
 cd
 unzip config.zip
