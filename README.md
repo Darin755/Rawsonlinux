@@ -2,8 +2,12 @@
 we are on version 2.0
 created by Darin Rawson and Alex Rawson
 
-homeconfig.zip contains the home directory configuration files for Raawson Linux 1.15
-RawsonLinuxscripts contains the scripts to be copied to the bin directory
+config.zip contains the .config directory for Rawson Linux 2.0
+Rawsonlinuxscripts contains the scripts for Rawson Linux
+
+when the script is run it will copy the .config directory and the
+Rawson Linux scripts to the $HOME directory then copy the scripts
+to the bin directory
 
 to install:
 chmod +x install
