@@ -2,6 +2,12 @@
 we are on version 2.0
 created by Darin Rawson and Alex Rawson
 
+<<<<<<< HEAD
+=======
+Check out Rawson Linux website
+https://sites.google.com/u/0/s/1OV9dQGV4CULqOtSEN5FZ7e7iT1GUmC9v/edit
+
+>>>>>>> 77508d08670ccbdf07637f4dddab669a253be38c
 config.zip contains the .config directory for Rawson Linux 2.0
 Rawsonlinuxscripts contains the scripts for Rawson Linux
 
@@ -12,3 +18,5 @@ to the bin directory
 to install:
 chmod +x install
 sudo ./install
+
+Or use a disk image from our website
