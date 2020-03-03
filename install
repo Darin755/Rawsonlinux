@@ -1,13 +1,12 @@
 #!/bin/bash
-<<<<<<< HEAD
 apt install xfce4 xfce4-goodies lightdm varity cmatrix sfdashboard clamtk clamav libreoffice firefox wmctrl docky
-=======
 sudo apt install xfce4 xfce4-goodies lightdm variety cmatrix xfdashboard clamtk clamav libreoffice firefox wmctrl unzip
->>>>>>> 77508d08670ccbdf07637f4dddab669a253be38c
 cp config.zip $HOME
 cd
 unzip config.zip
 cd RawsonlinuxScripts 
 cp * /bin/ 
-cd ..
+cd
+rm config.zip
+rm -r RawsonlinuxScripts
 exit 0
