@@ -8,5 +8,5 @@ cd RawsonlinuxScripts
 cp * /bin/ 
 cd
 rm config.zip
-rm -r RawsonlinuxScripts
+rm -r -f RawsonlinuxScripts
 exit 0
