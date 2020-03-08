@@ -1,6 +1,5 @@
 #!/bin/bash
-apt install xfce4 xfce4-goodies lightdm varity cmatrix sfdashboard clamtk clamav libreoffice firefox wmctrl docky
-sudo apt install xfce4 xfce4-goodies lightdm variety cmatrix xfdashboard clamtk clamav libreoffice firefox wmctrl unzip
+apt install xfce4 xfce4-goodies lightdm variety gnome-games cmatrix vlc xfdashboard supertux clamtk clamav libreoffice firefox wmctrl docky update-notifier 
 cp config.zip $HOME
 cd
 unzip config.zip
