@@ -3,7 +3,7 @@ we are on version 2.0
 created by Darin Rawson and Alex Rawson
 
 Check out Rawson Linux website
-https://sites.google.com/u/0/s/1OV9dQGV4CULqOtSEN5FZ7e7iT1GUmC9v/edit
+https://sites.google.com/u/0/s/1OV9dQGV4CULqOtSEN5FZ7e7iT1GUmC9v
 
 config.zip contains the .config directory and the rawsonlinuxscripts directory for Rawson Linux 2.0
 Rawsonlinuxscripts contains the scripts for Rawson Linux
