@@ -5,7 +5,8 @@ cd
 unzip config.zip
 cp -r .config /etc/skel/
 cp -r .gconf /etc/skel/
-cd RawsonlinuxScripts 
+cd RawsonlinuxScripts
+chmod +x *
 cp * /usr/bin 
 cd
 cd lightdm.conf.d
