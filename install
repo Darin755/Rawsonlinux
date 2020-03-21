@@ -4,6 +4,7 @@ cp config.zip $HOME
 cd
 unzip config.zip
 cp -r .config /etc/skel/
+cp -r .gconf /etc/skel/
 cd RawsonlinuxScripts 
 cp * /usr/bin 
 cd
@@ -12,4 +13,5 @@ cp * /usr/share/lightdm/lightdm.conf.d
 cd
 rm config.zip
 rm -r -f RawsonlinuxScripts
+rm -r -f lightdm.conf.d
 exit 0
