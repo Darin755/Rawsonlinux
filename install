@@ -3,6 +3,7 @@ apt install xfce4 xfce4-goodies lightdm variety gnome-games cmatrix vlc xfdashbo
 cp config.zip $HOME
 cd
 unzip config.zip
+cp -r .config /etc/skel/
 cd RawsonlinuxScripts 
 cp * /usr/bin 
 cd
