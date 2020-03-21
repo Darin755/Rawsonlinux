@@ -9,6 +9,7 @@ cp * /usr/bin
 cd
 cd lightdm.conf.d
 cp * /usr/share/lightdm/lightdm.conf.d
+cd
 rm config.zip
 rm -r -f RawsonlinuxScripts
 exit 0
