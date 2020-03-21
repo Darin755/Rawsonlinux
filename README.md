@@ -1,5 +1,5 @@
 #Rawson linux
-we are on version 2.0
+we are on version 2.5
 created by Darin Rawson and Alex Rawson
 
 Check out Rawson Linux website
@@ -15,6 +15,6 @@ to the bin directory
 
 to install:
 chmod +x install
-sudo ./install
+./install
 
 Or use a disk image from our website
