@@ -4,7 +4,7 @@ cp config.zip $HOME
 cd
 unzip config.zip
 cd RawsonlinuxScripts 
-cp * /bin/ 
+cp * /usr/bin 
 cd
 cd lightdm.conf.d
 rm *
