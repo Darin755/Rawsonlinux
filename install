@@ -1,5 +1,5 @@
 #!/bin/bash
-apt install xfce4 xfce4-goodies lightdm variety gnome-games cmatrix vlc xfdashboard supertux clamtk clamav libreoffice firefox wmctrl docky update-notifier 
+apt install xfce4 xfce4-goodies lightdm variety gnome-games cmatrix vlc xfdashboard ubuntu-software clamtk clamav libreoffice firefox wmctrl docky update-notifier thunderbird
 cp config.zip $HOME
 cd
 unzip config.zip
