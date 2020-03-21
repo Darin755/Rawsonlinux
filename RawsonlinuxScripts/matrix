@@ -1,0 +1,3 @@
+#!/bin/bash
+espeak welcome-to-the-matrix!
+xterm -e cmatrix
