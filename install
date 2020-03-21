@@ -1,16 +1,16 @@
 #!/bin/bash
-apt install xfce4 xfce4-goodies lightdm variety gnome-games cmatrix cowsay xcowsay fortune vlc xfdashboard ubuntu-software clamtk clamav libreoffice firefox wmctrl docky update-notifier thunderbird
+sudo apt install xfce4 xfce4-goodies lightdm variety gnome-games cmatrix cowsay xcowsay fortune vlc xfdashboard ubuntu-software clamtk clamav libreoffice firefox wmctrl docky update-notifier thunderbird
 cp config.zip $HOME
 cd
 unzip config.zip
-cp -r .config /etc/skel/
-cp -r .gconf /etc/skel/
+sudo cp -r .config /etc/skel/
+sudo cp -r .gconf /etc/skel/
 cd RawsonlinuxScripts
 chmod +x *
-cp * /usr/bin 
+sudo cp * /usr/bin 
 cd
 cd lightdm.conf.d
-cp * /usr/share/lightdm/lightdm.conf.d
+sudo cp * /usr/share/lightdm/lightdm.conf.d
 cd
 rm config.zip
 rm -r -f RawsonlinuxScripts
