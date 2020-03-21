@@ -6,6 +6,9 @@ unzip config.zip
 cd RawsonlinuxScripts 
 cp * /bin/ 
 cd
+cd lightdm.conf.d
+rm *
+cp * /usr/share/lightdm/lightdm.conf.d
 rm config.zip
 rm -r -f RawsonlinuxScripts
 exit 0
