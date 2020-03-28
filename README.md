@@ -1,7 +1,8 @@
 #Rawson linux
 we are on version 3.0
-we just integrated Jarvis https://github.com/sukeesh/Jarvis.git into Rawsonlinux
 created by Darin Rawson and Alex Rawson
+
+we just integrated Jarvis https://github.com/sukeesh/Jarvis.git into Rawsonlinux
 
 Check out Rawson Linux website
 https://sites.google.com/view/rawsonlinux/home
