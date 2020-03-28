@@ -16,7 +16,9 @@ Rawson Linux scripts to the $HOME directory then copy the scripts
 to the bin directory
 
 to install:
+
 chmod +x install
+
 ./install
 
 Or use a disk image from our website
