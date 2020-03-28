@@ -1,18 +1,41 @@
 #!/bin/bash
-sudo apt install xfce4 xfce4-goodies lightdm variety gnome-games cmatrix cowsay xcowsay fortune vlc xfdashboard ubuntu-software clamtk clamav libreoffice firefox wmctrl docky update-notifier thunderbird
+echo installing packedges
+sudo apt install xfce4 xfce4-goodies lightdm variety gnome-games cmatrix cowsay xcowsay fortune vlc xfdashboard ubuntu-software clamtk clamav libreoffice firefox wmctrl docky update-notifier thunderbird gnome-disk-utility virtualenv espeak 
+
+echo copying configuration files...
 cp config.zip $HOME
 cd
 unzip config.zip
-sudo cp -r .config /etc/skel/
-sudo cp -r .gconf /etc/skel/
+echo creating default user
+sudo cp -r -f .config /etc/skel/
+sudo cp -r -f .gconf /etc/skel/
+sudo cp -r -f .bashrc /etc/skel/
 cd RawsonlinuxScripts
 chmod +x *
-sudo cp * /usr/bin 
+sudo cp * /usr/bin
 cd
+echo configuring lightdm
 cd lightdm.conf.d
 sudo cp * /usr/share/lightdm/lightdm.conf.d
 cd
-rm config.zip
-rm -r -f RawsonlinuxScripts
-rm -r -f lightdm.conf.d
+
+echo installing Jarvis
+git clone https://github.com/sukeesh/Jarvis.git
+cd Jarvis
+sudo python installer
+sudo rm /jarviscli/plugins/openwebsite.py
+cd
+cp open.py $HOME/Jarvis/
+cp vistwesite.py $HOME/Jarvis/
+
+echo moving Jarvis files to default user....
+cd
+sudo cp -r -f $HOME/Jarvis/ /etc/skel/
+
+echo cleaning up...
+sudo rm config.zip
+sudo rm copy.py
+sudo rm vistwebsite.py
+sudo rm -r -f RawsonlinuxScripts
+sudo rm -r -f lightdm.conf.d
 exit 0
