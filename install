@@ -26,7 +26,7 @@ sudo python installer
 sudo rm /jarviscli/plugins/openwebsite.py
 cd
 cp open.py $HOME/Jarvis/
-cp vistwesite.py $HOME/Jarvis/
+cp VistWebsite.py $HOME/Jarvis/
 
 echo moving Jarvis files to default user....
 cd
@@ -34,8 +34,8 @@ sudo cp -r -f $HOME/Jarvis/ /etc/skel/
 
 echo cleaning up...
 sudo rm config.zip
-sudo rm copy.py
-sudo rm vistwebsite.py
+sudo rm open.py
+sudo rm VistWebsite.py
 sudo rm -r -f RawsonlinuxScripts
 sudo rm -r -f lightdm.conf.d
 exit 0
