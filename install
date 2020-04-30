@@ -1,11 +1,11 @@
 #!/bin/bash
-echo installing packedges
-sudo apt install xfce4 xfce4-goodies lightdm variety gnome-games cmatrix cowsay xcowsay fortune vlc xfdashboard ubuntu-software clamtk clamav clamav-daemon libreoffice firefox update-notifier thunderbird gnome-disk-utility virtualenv espeak tar
+echo installing packages
+sudo apt install xfce4 xfce4-goodies lightdm variety gnome-games cmatrix cowsay xcowsay fortune vlc xfdashboard ubuntu-software clamtk clamav clamav-daemon libreoffice firefox update-notifier thunderbird gnome-disk-utility virtualenv espeak unzip
 
 echo copying configuration files...
-cp config.tar.xz $HOME
+cp config.zip $HOME
 cd
-tar -xf config.tar.xz
+unzip config.zip
 echo creating default user
 sudo cp -r -f .config /etc/skel/
 sudo cp -r -f .bashrc /etc/skel/
@@ -21,17 +21,17 @@ cd
 
 echo installing Jarvis
 
-sudo cp Jarvis.tar.xz /home
 cd /home
-sudo tar -xf Jarvis.tar.xz
-sudo rm /home Jarvis.tar.xz
+sudo git clone https://github.com/Darin755/Jarvis.git
+cd Jarvis
+sudo rm -r -f .git
+
 cd
 sudo cp jarvis /usr/local/bin 
 
 echo cleaning up...
-sudo rm config.tar.xz
+sudo rm config.zip
 sudo rm jarvis
-sudo rm Jarvis.tar.xz
 sudo rm -r -f RawsonlinuxScripts
 sudo rm -r -f lightdm.conf.d
 exit 0
