@@ -1,8 +1,9 @@
 #Rawson linux
-we are on version 3.0
-created by Darin Rawson and Alex Rawson
+This is Rawsonlinux 20 "TRAPPIST"
 
-we just integrated Jarvis https://github.com/sukeesh/Jarvis.git into Rawsonlinux
+It is named after the TRAPPIST star system
+
+created by Darin Rawson and Alex Rawson
 
 Check out Rawson Linux website
 https://sites.google.com/view/rawsonlinux/home
