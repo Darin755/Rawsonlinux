@@ -3,7 +3,7 @@ echo installing packedges
 sudo apt install xfce4 xfce4-goodies lightdm variety gnome-games cmatrix cowsay xcowsay fortune vlc xfdashboard ubuntu-software clamtk clamav clamav-daemon libreoffice firefox update-notifier thunderbird gnome-disk-utility virtualenv espeak tar
 
 echo copying configuration files...
-cp config.zip $HOME
+cp config.tar.xz $HOME
 cd
 tar -xf config.tar.xz
 echo creating default user
@@ -29,7 +29,7 @@ cd
 sudo cp jarvis /usr/local/bin 
 
 echo cleaning up...
-sudo rm config.zip
+sudo rm config.tar.xz
 sudo rm jarvis
 sudo rm Jarvis.tar.xz
 sudo rm -r -f RawsonlinuxScripts
