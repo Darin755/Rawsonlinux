@@ -1,6 +1,6 @@
 #!/bin/bash
 echo installing packages
-sudo apt install xfce4 xfce4-goodies lightdm variety gnome-games cmatrix cowsay xcowsay fortune vlc xfdashboard ubuntu-software clamtk clamav clamav-daemon libreoffice firefox update-notifier thunderbird gnome-disk-utility virtualenv espeak unzip
+sudo apt install xfce4 xfce4-goodies lightdm variety gnome-games cmatrix cowsay xcowsay ubiquity-frontend-gtk fortune vlc xfdashboard ubuntu-software clamtk clamav clamav-daemon libreoffice firefox update-notifier thunderbird gnome-disk-utility virtualenv espeak unzip
 
 echo copying configuration files...
 cp config.zip $HOME
