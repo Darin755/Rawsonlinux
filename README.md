@@ -14,7 +14,7 @@ Rawsonlinuxscripts contains the scripts for Rawson Linux
 
 when the script is run it will copy the .config directory and the
 Rawson Linux scripts to the $HOME directory then copy the scripts
-to the bin directory
+to the bin directory. Then it will install Jarvis
 
 to install:
 
