@@ -30,6 +30,8 @@ sudo python3 installer
 sudo cp $HOME/open.py /home/Jarvis/jarviscli/plugins
 sudo cp $HOME/VistWebsite.py /home/Jarvis/jarviscli/plugins
 sudo rm -f /home/Jarvis/jarviscli/plugins/OpenWebsite.py
+sudo chmod -R +rwx /home/Jarvis/jarviscli/packages/memory
+sudo chmod -R +rwx /home/Jarvis/custom
 cd
 
 echo cleaning up...
