@@ -1,4 +1,5 @@
 #Rawson linux
+
 This is Rawsonlinux 20 "TRAPPIST_3"
 
 It is named after the TRAPPIST star system
@@ -9,7 +10,9 @@ Check out Rawson Linux website
 https://sites.google.com/view/rawsonlinux/home
 
 config.zip contains the home directory files
+
 update.zip contains update related files
+
 Rawsonlinuxscripts contains the scripts for Rawson Linux
 
 when the script is run it will copy home directory files and folders
