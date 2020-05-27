@@ -9,7 +9,7 @@ unzip config.zip
 echo creating default user
 sudo cp -r -f .config /etc/skel/
 sudo cp -r -f .bashrc /etc/skel/
-sudo cp /etc/skel/* /ust/share/lightdm/guest-session/skel
+sudo cp -r -f /etc/skel/* /ust/share/lightdm/guest-session/skel
 cd RawsonlinuxScripts
 chmod +x *
 sudo cp * /usr/bin
@@ -25,11 +25,11 @@ cd /usr/share
 sudo git clone https://github.com/sukeesh/Jarvis.git
 cd Jarvis
 echo running installer..
-echo select none then 1
+echo select 2 then 1
 sudo python3 installer
-sudo cp $HOME/open.py /home/Jarvis/jarviscli/plugins
-sudo cp $HOME/VistWebsite.py /home/Jarvis/jarviscli/plugins
-sudo rm -f /home/Jarvis/jarviscli/plugins/OpenWebsite.py
+sudo cp $HOME/open.py /usr/share/Jarvis/jarviscli/plugins
+sudo cp $HOME/VistWebsite.py /usr/share/Jarvis/jarviscli/plugins
+sudo rm -f /usr/share/Jarvis/jarviscli/plugins/OpenWebsite.py
 sudo chmod -R +rwx /home/Jarvis/jarviscli/packages/memory
 sudo chmod -R +rwx /home/Jarvis/custom
 cd
