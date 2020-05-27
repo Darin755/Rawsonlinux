@@ -4,7 +4,7 @@ This is Rawsonlinux 20 "TRAPPIST_3"
 
 It is named after the TRAPPIST star system
 
-created by Darin Rawson and Alex Rawson
+it was created by Darin Rawson and Alex Rawson
 
 Check out Rawson Linux website
 https://sites.google.com/view/rawsonlinux/home
@@ -16,9 +16,9 @@ update.zip contains update related files
 Rawsonlinuxscripts contains the scripts for Rawson Linux
 
 when the script is run it will copy home directory files and folders
-to the $HOME directory then copy the scripts from the Rawsonlinux directory to /usr/bin
-Then it will configure lightdm
-After that it will install Jarvis
+to the $HOME directory. It then copy the scripts from the Rawsonlinux directory to /usr/bin.
+After that will configure lightdm.
+Then it will install Jarvis. It then will clean up.
 
 to install:
 
