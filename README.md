@@ -8,13 +8,14 @@ created by Darin Rawson and Alex Rawson
 Check out Rawson Linux website
 https://sites.google.com/view/rawsonlinux/home
 
-config.zip contains the .config directory and the rawsonlinuxscripts directory for Rawson Linux 2.0
+config.zip contains the home directory files
+update.zip contains update related files
 Rawsonlinuxscripts contains the scripts for Rawson Linux
-.config contains the configuration files
 
-when the script is run it will copy the .config directory and the
-Rawson Linux scripts to the $HOME directory then copy the scripts
-to the bin directory. Then it will install Jarvis
+when the script is run it will copy home directory files and folders
+to the $HOME directory then copy the scripts from the Rawsonlinux directory to /usr/bin
+Then it will configure lightdm
+After that it will install Jarvis
 
 to install:
 
