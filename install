@@ -9,7 +9,7 @@ unzip config.zip
 echo creating default user
 sudo cp -r -f .config /etc/skel/
 sudo cp -r -f .bashrc /etc/skel/
-sudo cp -r -f /etc/skel/* /ust/share/lightdm/guest-session/skel
+sudo cp -r -f /etc/skel/* /usr/share/lightdm/guest-session/skel
 cd Rawsonlinux
 cd RawsonlinuxScripts
 chmod +x *
