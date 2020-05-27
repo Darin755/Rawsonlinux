@@ -6,6 +6,8 @@ It is named after the TRAPPIST star system
 
 it was created by Darin Rawson and Alex Rawson
 
+To update Rawsonlinux config files from this Repo run Rawsonlinux-update as a non root user
+
 Check out Rawson Linux website
 https://sites.google.com/view/rawsonlinux/home
 
@@ -25,5 +27,6 @@ to install:
 chmod +x install
 
 ./install
+   -Do not run as root
 
 Or use a disk image from our website
