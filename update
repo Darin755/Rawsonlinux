@@ -1,0 +1,5 @@
+#!/bin/bash
+chmod +x install
+./install
+sudo apt remove gnome-games ubiquity-gtk-frontend 
+

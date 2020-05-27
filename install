@@ -1,6 +1,6 @@
 #!/bin/bash
 echo installing packages
-sudo apt install xfce4 xfce4-goodies lightdm variety gnome-games cmatrix cowsay xcowsay ubiquity-frontend-gtk fortune vlc xfdashboard ubuntu-software clamtk clamav clamav-daemon libreoffice firefox update-notifier thunderbird gnome-disk-utility virtualenv espeak unzip python python3 python3-pip
+sudo apt install cheese wmctrl xfce4 xfce4-goodies lightdm variety supertuxkart cmatrix cowsay xcowsay fortune vlc xfdashboard ubuntu-software clamtk clamav clamav-daemon libreoffice firefox update-notifier thunderbird gnome-disk-utility virtualenv espeak unzip python3 python3-pip policykit-1-gnome gnome-screensaver libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0
 
 echo copying configuration files...
 cp config.zip $HOME
@@ -21,11 +21,11 @@ cd
 
 echo installing Jarvis
 
-cd /home
+cd /usr/share
 sudo git clone https://github.com/sukeesh/Jarvis.git
 cd Jarvis
 echo running installer..
-echo select 4 then 1
+echo select none then 1
 sudo python3 installer
 sudo cp $HOME/open.py /home/Jarvis/jarviscli/plugins
 sudo cp $HOME/VistWebsite.py /home/Jarvis/jarviscli/plugins
