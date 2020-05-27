@@ -3,3 +3,13 @@ chmod +x install
 ./install
 sudo apt remove gnome-games ubiquity-gtk-frontend 
 
+mkdir /tmp/updates
+
+cp updates.zip /tmp/updates
+cd /tmp/updates
+
+unzip updates.zip
+
+sudo cp -f issue /etc
+sudo cp -f os-release /usr/lib/
+sudo cp -f watermark.png /usr/share/plymouth/themes/spinner/watermark.png
