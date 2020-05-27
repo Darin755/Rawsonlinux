@@ -10,13 +10,14 @@ echo creating default user
 sudo cp -r -f .config /etc/skel/
 sudo cp -r -f .bashrc /etc/skel/
 sudo cp -r -f /etc/skel/* /ust/share/lightdm/guest-session/skel
+cd Rawsonlinux
 cd RawsonlinuxScripts
 chmod +x *
-sudo cp * /usr/bin
+sudo cp -f -r * /usr/bin
 cd
 echo configuring lightdm
 cd lightdm.conf.d
-sudo cp * /usr/share/lightdm/lightdm.conf.d
+sudo cp -r -f * /usr/share/lightdm/lightdm.conf.d
 cd
 
 echo installing Jarvis
@@ -27,17 +28,16 @@ cd Jarvis
 echo running installer..
 echo select 2 then 1
 sudo python3 installer
-sudo cp $HOME/open.py /usr/share/Jarvis/jarviscli/plugins
-sudo cp $HOME/VistWebsite.py /usr/share/Jarvis/jarviscli/plugins
+sudo cp -f -r $HOME/open.py /usr/share/Jarvis/jarviscli/plugins
+sudo cp -f -r $HOME/VistWebsite.py /usr/share/Jarvis/jarviscli/plugins
 sudo rm -f /usr/share/Jarvis/jarviscli/plugins/OpenWebsite.py
-sudo chmod -R +rwx /home/Jarvis/jarviscli/packages/memory
-sudo chmod -R +rwx /home/Jarvis/custom
+sudo chmod -R +rwx /usr/share/Jarvis/jarviscli/packages/memory
+sudo chmod -R +rwx /usr/share/Jarvis/custom
 cd
 
 echo cleaning up...
-sudo rm config.zip
-sudo rm open.py
-sudo rm VisitWebsite.py
-sudo rm -r -f RawsonlinuxScripts
+sudo rm -f config.zip
+sudo rm -f open.py
+sudo rm -f VisitWebsite.py
 sudo rm -r -f lightdm.conf.d
 exit 0
