@@ -7,6 +7,7 @@ It is named after the TRAPPIST star system
 it was created by Darin Rawson and Alex Rawson
 
 To update Rawsonlinux run Rawsonlinux-update as a non root user
+This will not update any packages via apt.
 
 Check out Rawson Linux website
 https://sites.google.com/view/rawsonlinux/home
