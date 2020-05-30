@@ -12,6 +12,7 @@ git clone https://github.com/Darin755/Rawsonlinux.git
 cd Rawsonlinux
 chmod +x full-install
 ./full-install
+sudo cp version /etc/version
 cd
 rm -f -r Rawsonlinux
 else
