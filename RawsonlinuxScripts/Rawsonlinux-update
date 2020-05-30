@@ -10,8 +10,8 @@ cd
 rm -r -f Rawsonlinux
 git clone https://github.com/Darin755/Rawsonlinux.git
 cd Rawsonlinux
-chmod +x update
-./update
+chmod +x full-install
+./full-install
 cd
 rm -f -r Rawsonlinux
 else

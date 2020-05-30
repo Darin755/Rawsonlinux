@@ -1,15 +1,15 @@
 #!/bin/bash
 chmod +x install
 ./install
-sudo apt remove gnome-games ubiquity-gtk-frontend 
+sudo apt remove gnome-games ubiquity-frontend-gtk
 sudo apt autoremove
 
-mkdir /tmp/updates
+mkdir /tmp/full-install
 
-cp updates.zip /tmp/updates
-cd /tmp/updates
+cp full-install.zip /tmp/full-install
+cd /tmp/full-install
 
-unzip updates.zip
+unzip full-install.zip
 
 sudo cp -f issue /etc
 sudo cp -f os-release /usr/lib/
@@ -17,6 +17,7 @@ sudo cp -f watermark.png /usr/share/plymouth/themes/spinner/watermark.png
 sudo cp -f watermark.png /usr/share/plymouth/ubuntu-logo.png
 
 sudo update-initramfs -u
+sudo update-grub
 
 cd /tmp
-rm -f -r updates
+rm -f -r full-install
