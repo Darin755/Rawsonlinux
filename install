@@ -29,7 +29,7 @@ echo running installer..
 echo select 2 then 1
 sudo python3 installer
 sudo cp -f -r $HOME/open.py /usr/share/Jarvis/jarviscli/plugins
-sudo cp -f -r $HOME/VistWebsite.py /usr/share/Jarvis/jarviscli/plugins
+sudo cp -f -r $HOME/VisitWebsite.py /usr/share/Jarvis/jarviscli/plugins
 sudo rm -f /usr/share/Jarvis/jarviscli/plugins/OpenWebsite.py
 sudo chmod -R +rwx /usr/share/Jarvis/jarviscli/packages/memory
 sudo chmod -R +rwx /usr/share/Jarvis/custom
