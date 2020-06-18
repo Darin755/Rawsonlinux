@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=Go
+Comment=Launch a Program
+GenericName=Xfdashboard
+TryExec=/usr/bin/xfdashboard
+Exec=/usr/bin/xfdashboard
+Icon=software-update-available
+Categories=System;
+NotShowIn=GNOME;KDE;Unity;
+Terminal=false
+X-XFCE-Source=file:///usr/share/applications/xfdashboard.desktop
+Path=
+StartupNotify=false

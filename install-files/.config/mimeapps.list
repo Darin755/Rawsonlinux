@@ -1,0 +1,9 @@
+[Added Associations]
+image/jpeg=ristretto.desktop;firefox.desktop;
+text/plain=mousepad.desktop;gcr-viewer.desktop;
+application/x-compressed-tar=xarchiver.desktop;
+application/x-shellscript=gcr-viewer.desktop;
+image/png=firefox.desktop;
+application/zip=xarchiver.desktop;
+text/x-python=mousepad.desktop;
+application/x-desktop=mousepad.desktop;

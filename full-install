@@ -1,23 +1,26 @@
 #!/bin/bash
+echo running install
 chmod +x install
 ./install
+echo removing extra packages
 sudo apt remove gnome-games light-locker
 sudo apt autoremove
+echo setting up tmp
+tmp=/tmp/full-install
 
-mkdir /tmp/full-install
+mkdir $tmp
 
-cp full-install.zip /tmp/full-install
-cd /tmp/full-install
+cp -f -r full-install-files $tmp
+cd $tmp
 
-unzip full-install.zip
-
-sudo cp -f issue /etc
-sudo cp -f os-release /usr/lib/
-sudo cp -f watermark.png /usr/share/plymouth/themes/spinner/watermark.png
-sudo cp -f watermark.png /usr/share/plymouth/ubuntu-logo.png
-
+echo setting system info
+sudo cp -f $tmp/issue /etc
+sudo cp -f $tmp/os-release /etc/os-release
+echo setting boot screen
+sudo cp -f $tmp/watermark.png /usr/share/plymouth/themes/spinner/watermark.png
+sudo cp -f $tmp/watermark.png /usr/share/plymouth/ubuntu-logo.png
 sudo update-initramfs -u
 sudo update-grub
 
-cd /tmp
-rm -f -r full-install
+echo cleaning up
+rm -f -r $tmp

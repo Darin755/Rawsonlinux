@@ -1,24 +1,26 @@
 #!/bin/bash
 echo installing packages
-sudo apt install cheese wmctrl xfce4 xfce4-goodies lightdm variety gnome-locker supertuxkart cmatrix cowsay xcowsay fortune vlc xfdashboard ubuntu-software clamtk clamav clamav-daemon libreoffice firefox update-notifier thunderbird gnome-disk-utility virtualenv espeak unzip python3 python3-pip policykit-1-gnome gnome-screensaver libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0
+sudo apt install cheese wmctrl xfce4 xfce4-goodies lightdm variety gnome-locker supertuxkart cmatrix cowsay xcowsay fortune vlc xfdashboard ubuntu-software clamtk clamav clamav-daemon libreoffice firefox update-notifier thunderbird gnome-disk-utility virtualenv espeak python3 python3-pip policykit-1-gnome gnome-screensaver libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0
 
-echo copying configuration files...
-cp config.zip $HOME
-cd
-unzip config.zip
+echo setting up tmp
+
+tmp=/tmp/Rinstall
+
+mkdir $tmp
+
+echo copying files to tmp...
+cp -r -f * $tmp
+cd $tmp
 echo creating default user
-sudo cp -r -f .config /etc/skel/
-sudo cp -r -f .bashrc /etc/skel/
+sudo cp -r -f $tmp/install-files/.config /etc/skel/
+sudo cp -r -f $tmpinstall-files/.bashrc /etc/skel/
 sudo cp -r -f /etc/skel/* /usr/share/lightdm/guest-session/skel
-cd Rawsonlinux
-cd RawsonlinuxScripts
-chmod +x *
-sudo cp -f -r * /usr/bin
+
+chmod +x $tmp/Rawsonlinux-scripts/*
+sudo cp -f -r $tmp/Rawsonlinux-scripts/* /usr/bin
 cd
 echo configuring lightdm
-cd lightdm.conf.d
-sudo cp -r -f * /usr/share/lightdm/lightdm.conf.d
-cd
+sudo cp -r -f $tmp/install-files/lightdm.conf.d /usr/share/lightdm/lightdm.conf.d
 
 echo installing Jarvis
 
@@ -28,16 +30,11 @@ cd Jarvis
 echo running installer..
 echo select 2 then 1
 sudo python3 installer
-sudo cp -f -r $HOME/open.py /usr/share/Jarvis/jarviscli/plugins
-sudo cp -f -r $HOME/VisitWebsite.py /usr/share/Jarvis/jarviscli/plugins
-sudo rm -f /usr/share/Jarvis/jarviscli/plugins/OpenWebsite.py
 sudo chmod -R +rwx /usr/share/Jarvis/jarviscli/packages/memory
 sudo chmod -R +rwx /usr/share/Jarvis/custom
-cd
+
 
 echo cleaning up...
-sudo rm -f config.zip
-sudo rm -f open.py
-sudo rm -f VisitWebsite.py
-sudo rm -r -f lightdm.conf.d
+sudo rm -r -f $tmp
+cd $PWD 
 exit 0

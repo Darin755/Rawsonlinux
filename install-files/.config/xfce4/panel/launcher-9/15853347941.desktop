@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Jarvis
+Comment=run jarvis assistant
+Exec=xfce4-terminal -e "bash -c \\"jarvis; bash\\""
+Icon=face-cool
+Path=
+Terminal=false
+StartupNotify=false
