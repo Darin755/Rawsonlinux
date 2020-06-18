@@ -1,6 +1,6 @@
 #!/bin/bash
 echo installing packages
-sudo apt install cheese wmctrl xfce4 xfce4-goodies lightdm variety supertuxkart cmatrix cowsay xcowsay fortune vlc xfdashboard ubuntu-software clamtk clamav clamav-daemon libreoffice firefox update-notifier thunderbird gnome-disk-utility virtualenv espeak unzip python3 python3-pip policykit-1-gnome gnome-screensaver libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0
+sudo apt install cheese wmctrl xfce4 xfce4-goodies lightdm variety gnome-locker supertuxkart cmatrix cowsay xcowsay fortune vlc xfdashboard ubuntu-software clamtk clamav clamav-daemon libreoffice firefox update-notifier thunderbird gnome-disk-utility virtualenv espeak unzip python3 python3-pip policykit-1-gnome gnome-screensaver libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0
 
 echo copying configuration files...
 cp config.zip $HOME
