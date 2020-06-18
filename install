@@ -11,6 +11,10 @@ mkdir $tmp
 echo copying files to tmp...
 cp -r -f * $tmp
 cd $tmp
+echo setting up $HOME
+
+cp -r -f $tmp/install-files/.config $HOME/.config 
+
 echo creating default user
 sudo cp -r -f $tmp/install-files/.config /etc/skel/
 sudo cp -r -f $tmpinstall-files/.bashrc /etc/skel/
