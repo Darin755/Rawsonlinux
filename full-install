@@ -1,7 +1,7 @@
 #!/bin/bash
 chmod +x install
 ./install
-sudo apt remove gnome-games ubiquity-frontend-gtk
+sudo apt remove gnome-games light-locker
 sudo apt autoremove
 
 mkdir /tmp/full-install
