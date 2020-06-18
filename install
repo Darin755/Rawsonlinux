@@ -20,8 +20,8 @@ sudo cp -r -f $tmp/install-files/.config /etc/skel/
 sudo cp -r -f $tmp/install-files/.bashrc /etc/skel/
 sudo cp -r -f /etc/skel/* /usr/share/lightdm/guest-session/skel
 
-chmod +x $tmp/Rawsonlinux-scripts/*
-sudo cp -f -r $tmp/Rawsonlinux-scripts/* /usr/bin
+chmod +x $tmp/RawsonlinuxScripts/*
+sudo cp -f -r $tmp/RawsonlinuxScripts/* /usr/bin
 cd
 echo configuring lightdm
 sudo cp -r -f $tmp/install-files/lightdm.conf.d /usr/share/lightdm/lightdm.conf.d
