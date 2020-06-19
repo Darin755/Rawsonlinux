@@ -10,7 +10,7 @@ tmp=/tmp/full-install
 
 mkdir $tmp
 
-cp -f -r full-install-files $tmp
+cp -f -r full-install-files/ $tmp
 cd $tmp
 
 echo setting system info
