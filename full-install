@@ -10,7 +10,7 @@ tmp=/tmp/full-install
 
 mkdir $tmp
 
-cp -f -r full-install-files/ $tmp
+cp -f -r full-install-files/* $tmp
 cd $tmp
 
 echo setting system info
@@ -25,4 +25,4 @@ sudo update-initramfs -u
 sudo update-grub
 
 echo cleaning up
-rm -f -r $tmp
+sudo rm -f -r $tmp
