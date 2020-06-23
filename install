@@ -34,8 +34,8 @@ cd Jarvis
 echo running installer..
 echo select 2 then 1
 sudo python3 installer
-sudo chmod -R +rwx /usr/share/Jarvis/jarviscli/packages/memory
-sudo chmod -R +rwx /usr/share/Jarvis/custom
+sudo chmod -R ugo+rwx /usr/share/Jarvis/jarviscli/packages/memory
+sudo chmod -R ugo+rwx /usr/share/Jarvis/custom
 
 
 echo cleaning up...
