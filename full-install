@@ -18,7 +18,7 @@ sudo cp -f $tmp/issue /etc
 sudo cp -f $tmp/os-release /etc/os-release
 echo setting boot screen
 sudo apt install plymouth-themes
-sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/spinner/spinner.plymouth" 100
+sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/spinner/spinner.plymouth 100
 sudo cp -f $tmp/watermark.png /usr/share/plymouth/themes/spinner/watermark.png
 sudo cp -f $tmp/watermark.png /usr/share/plymouth/ubuntu-logo.png
 sudo update-initramfs -u
