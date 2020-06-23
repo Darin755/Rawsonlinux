@@ -22,10 +22,10 @@ full-install-files contains the boot splash screen and the release files
 Rawsonlinuxscripts contains the scripts for Rawson Linux
 
 
-To install run install as a non root user
+To install run the install script as a non root user
 
 
-to completely install rawsonlinux run full-install
+to completely install rawsonlinux run the script full-install
 
 
 Or use a disk image from our website
