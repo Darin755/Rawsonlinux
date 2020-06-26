@@ -3,7 +3,7 @@ echo running install
 chmod +x install
 ./install
 echo removing extra packages
-sudo apt remove gnome-games light-locker
+sudo apt remove gnome-games light-locker systemback
 sudo apt autoremove
 echo setting up tmp
 tmp=/tmp/full-install
