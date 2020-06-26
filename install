@@ -29,6 +29,7 @@ sudo cp -r -f $tmp/install-files/lightdm.conf.d /usr/share/lightdm/lightdm.conf.
 echo installing Jarvis
 
 cd /usr/share
+sudo rm -r -f Jarvis
 sudo git clone https://github.com/sukeesh/Jarvis.git
 cd Jarvis
 echo running installer..
