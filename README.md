@@ -1,6 +1,6 @@
 #Rawson linux
 
-This is Rawsonlinux 20 "TRAPPIST4"
+This is Rawsonlinux 20 "TRAPPIST5"
 
 It is named after the TRAPPIST star system
 
