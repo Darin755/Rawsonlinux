@@ -15,7 +15,6 @@ cd $tmp
 
 echo setting system info
 sudo cp -f $tmp/issue /etc
-sudo cp -f $tmp/os-release /etc/os-release
 echo setting boot screen
 sudo apt install plymouth-themes
 sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/spinner/spinner.plymouth 100
