@@ -32,8 +32,7 @@ cd /usr/share
 sudo rm -r -f Jarvis
 sudo git clone https://github.com/sukeesh/Jarvis.git
 cd Jarvis
-echo running installer..
-echo select 2 then 1
+echo running Jarvis installer..
 sudo python3 installer
 sudo chmod -R ugo+rwx /usr/share/Jarvis/jarviscli/packages/memory
 sudo chmod -R ugo+rwx /usr/share/Jarvis/custom
