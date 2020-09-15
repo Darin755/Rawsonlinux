@@ -1,0 +1,27 @@
+#! /bin/bash
+cd /tmp
+rm -f version
+echo checking for updates..
+wget https://raw.githubusercontent.com/Darin755/Rawsonlinux/master/version
+
+if !(expr $(cat /tmp/version) = $(cat /etc/version)); then
+if zenity --title=Rawsonlinux --question --text="There is a update for Rawsonlinux. Would you like to install it?"
+then 
+echo installing updates
+cd
+rm -r -f Rawsonlinux
+git clone https://github.com/Darin755/Rawsonlinux.git
+cd Rawsonlinux
+chmod +x update
+./update
+sudo cp version /etc/version
+cd
+rm -f -r Rawsonlinux
+fi
+else
+echo no updates
+fi
+
+rm -f /tmp/version
+echo done
+exit 0
