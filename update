@@ -1,5 +1,4 @@
 #!/bin/bash
-#!/bin/bash
 echo installing packages
 sudo apt install $(cat packages)
 

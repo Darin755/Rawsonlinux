@@ -1,8 +1,8 @@
 #Rawson linux
 
-This is Rawsonlinux 20 "TRAPPIST6"
+This is Rawsonlinux 20 "Neptune"
 
-It is named after the TRAPPIST star system
+<img src="screenshot.png">
 
 it was created by Darin Rawson and Alex Rawson
 

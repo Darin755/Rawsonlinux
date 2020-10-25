@@ -13,7 +13,7 @@ cp -r -f * $tmp
 cd $tmp
 echo setting up $HOME
 
-cp -r -f $tmp/install-files/.config $HOME/.config 
+cp -r -f $tmp/install-files/config $HOME/.config 
 
 echo creating default user
 sudo cp -r -f $tmp/install-files/.config /etc/skel/
@@ -25,18 +25,6 @@ sudo cp -f -r $tmp/RawsonlinuxScripts/* /usr/bin
 cd
 echo configuring lightdm
 sudo cp -r -f $tmp/install-files/lightdm.conf.d /usr/share/lightdm/lightdm.conf.d
-
-echo installing Jarvis
-
-cd /usr/share
-sudo rm -r -f Jarvis
-sudo git clone https://github.com/sukeesh/Jarvis.git
-cd Jarvis
-echo running Jarvis installer..
-sudo python3 installer
-sudo chmod -R ugo+rwx /usr/share/Jarvis/jarviscli/packages/memory
-sudo chmod -R ugo+rwx /usr/share/Jarvis/custom
-
 
 echo cleaning up...
 sudo rm -r -f $tmp
