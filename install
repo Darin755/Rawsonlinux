@@ -14,10 +14,10 @@ cp -r -f * $tmp
 cd $tmp
 echo setting up $HOME
 
-cp -r -f $tmp/install-files/config $HOME/.config 
+cp -r -f $tmp/install-files/config/* $HOME/.config 
 
 echo creating default user
-sudo cp -r -f $tmp/install-files/.config /etc/skel/
+sudo cp -r -f $tmp/install-files/config/* /etc/skel/.config
 sudo cp -r -f $tmp/install-files/.bashrc /etc/skel/
 sudo cp -r -f /etc/skel/* /usr/share/lightdm/guest-session/skel
 
