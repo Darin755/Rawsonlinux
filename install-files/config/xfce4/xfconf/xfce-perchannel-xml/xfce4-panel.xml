@@ -14,8 +14,6 @@
         <value type="int" value="1"/>
         <value type="int" value="7"/>
         <value type="int" value="3"/>
-        <value type="int" value="4"/>
-        <value type="int" value="2"/>
         <value type="int" value="6"/>
         <value type="int" value="8"/>
         <value type="int" value="9"/>
@@ -28,11 +26,11 @@
       <property name="expand" type="bool" value="true"/>
       <property name="style" type="uint" value="0"/>
     </property>
-    <property name="plugin-4" type="string" value="pager"/>
     <property name="plugin-6" type="string" value="systray">
       <property name="show-frame" type="bool" value="false"/>
       <property name="square-icons" type="bool" value="true"/>
       <property name="names-ordered" type="array">
+        <value type="string" value="update-notifier"/>
         <value type="string" value="variety"/>
         <value type="string" value="networkmanager applet"/>
       </property>
@@ -47,6 +45,5 @@
     <property name="plugin-7" type="string" value="dockbarx">
       <property name="block-autohide" type="bool" value="false"/>
     </property>
-    <property name="plugin-2" type="string" value="weather"/>
   </property>
 </channel>

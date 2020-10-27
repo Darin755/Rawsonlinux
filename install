@@ -15,11 +15,12 @@ cd $tmp
 echo setting up $HOME
 
 cp -r -f $tmp/install-files/config/* $HOME/.config 
+grep -qxF 'fortune | say' $HOME/.bashrc || echo 'fortune | say' >> $HOME/.bashrc
 
 echo creating default user
 sudo cp -r -f $tmp/install-files/config/* /etc/skel/.config
 sudo cp -r -f $tmp/install-files/.bashrc /etc/skel/
-sudo cp -r -f /etc/skel/* /usr/share/lightdm/guest-session/skel
+sudo cp -r -f /etc/skel/ /usr/share/lightdm/guest-session/
 
 chmod +x $tmp/RawsonlinuxScripts/*
 sudo cp -f -r $tmp/RawsonlinuxScripts/* /usr/bin
