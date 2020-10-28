@@ -26,7 +26,7 @@ chmod +x $tmp/RawsonlinuxScripts/*
 sudo cp -f -r $tmp/RawsonlinuxScripts/* /usr/bin
 cd
 echo configuring lightdm
-sudo cp -r -f $tmp/install-files/lightdm.conf.d /usr/share/lightdm/lightdm.conf.d
+sudo cp -r -f $tmp/install-files/lightdm.conf.d/* /usr/share/lightdm/lightdm.conf.d
 
 echo cleaning up...
 sudo rm -r -f $tmp
