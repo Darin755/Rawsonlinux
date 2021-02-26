@@ -29,3 +29,5 @@ to completely install rawsonlinux run the script full-install
 
 
 Or use a disk image from our website
+
+after you install Rawsonlinux you will be prompted to try or install. This is due to a bug. Just run sudo apt remove ubiquity and sudo apt autoremove to fix the problem.
