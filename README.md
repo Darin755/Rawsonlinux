@@ -6,6 +6,7 @@ This is Rawsonlinux 20 "Neptune"
 
 it was created by Darin Rawson and Alex Rawson
 
+It is based off of MXlinux
 
 To update Rawsonlinux run Rawsonlinux-update as a non root user
 
