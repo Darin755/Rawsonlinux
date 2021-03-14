@@ -1,6 +1,5 @@
 #!/bin/bash
 echo installing packages
-sudo add-apt-repository ppa:xuzhen666/dockbarx #dockbarx ppa
 sudo apt install $(cat packages)
 
 echo setting up tmp
