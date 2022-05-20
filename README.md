@@ -1,3 +1,8 @@
+
+# not maintained
+
+## this was created as a weekend project
+
 # Rawson linux
 
 This is Rawsonlinux 20 "Neptune"
